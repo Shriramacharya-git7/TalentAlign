@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "@/redux/Provider";
+import Navbar from "@/components/Navbar";  // ✅ Navbar
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,7 @@ export const metadata = {
   title: "TalentAlign",
   description: "AI powered job application platform",
   icons: {
-    icon: "/favicon.png"
+    icon: "/favicon.png",
   },
 };
 
@@ -24,7 +25,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Providers>{children}</Providers> 
+        <Providers>
+          <Navbar />      {/* ✅ Navbar */}
+          <main>{children}</main> {/* Page content */}
+        </Providers>
       </body>
     </html>
   );

@@ -14,20 +14,20 @@ const Footer = ({ darkMode }) => {
   const contactInfo = [
     { 
       icon: <Mail size={16} />, 
-      text: "bkbajpay0905@gmail.com", 
-      href: "mailto:bkbajpay0905@gmail.com",
+      text: "shriramacharya78@gmail.com", 
+      href: "mailto:shriramacharya78@gmail.com",
       ariaLabel: "Email us" 
     },
     { 
       icon: <PhoneCall size={16} />, 
-      text: "+91-7877058098", 
-      href: "tel:+917877058098",
+      text: "+91-7483262386", 
+      href: "tel:+917483262386",
       ariaLabel: "Call us" 
     },
     { 
       icon: <MapPin size={16} />, 
-      text: "123, Sidh Nagar, Morena, MP", 
-      href: "https://maps.google.com/?q=123,+Sidh+Nagar,+Morena,+MP",
+      text: "#57 Annapoorneshwari layout ,Ullal,Bangalore", 
+      href: "https://maps.google.com/?q=57,+Annapoorneshwari+layout,+Ullal,+Bangalore",
       ariaLabel: "View on map" 
     },
   ];
